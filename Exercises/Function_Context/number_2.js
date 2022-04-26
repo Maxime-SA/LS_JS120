@@ -4,7 +4,7 @@ let franchise = {
     let self = this;
     return [1, 2, 3].map(function(number) {
       return self.name + ' ' + number;
-    }.bind(this));
+    });
   },
 };
 
