@@ -199,5 +199,6 @@
     let str = '12345';
     let arr = ['1','2','3','4','5'];
 
-    console.log(str.indexOf('3'));
-    console.log(arr.indexOf('3'));
+    let unrelatedObjects = [str, arr];
+
+    unrelatedObjects.forEach(obj => console.log(obj.indexOf('3')));
