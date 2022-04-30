@@ -163,6 +163,10 @@
   Object.assign(Dog.prototype, Swim);
   Object.assign(Cat.prototype, Swim);
 
+  let dog = new Dog('Dog', 'Bud', 'Labrador');
+  let cat = new Cat('Cat','Mylo','Bengal');
+  let bird = new Bird('Bird','Paco','Owl');
+
 // POLYMORPHISM
   // Polymorphism refers to the ability of objects with different types to respond in different ways to the same method invocation.
   
@@ -185,6 +189,10 @@
     }
 
     class Fish extends Animal {}
+
+    let instances = [new Dog(), new Cat(), new Fish()];
+    
+    instances.forEach(obj => obj.sound());
 
   // We can have polymorphism trough duck typing which would be for objects that are not related but use the same method name to perform
   // different but related operations.
